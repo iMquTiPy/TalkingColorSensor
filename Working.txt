@@ -1,0 +1,27 @@
+We have developed  using a Raspberry Pi 3 and camera based talking color sensor for chemistry experiments done by students. 
+Here we have created two modes - 
+1) Color detection mode 
+2) pH color detection mode 
+We have used rotary encoder button to change between modes and read color value.
+
+
+ 1) COLOR DETECTION MODE
+
+-> This mode is used to detect color change.
+-> Helpful during various chemical reaction.
+-> When the  button is pressed takes a snapshot.
+-> Calculates the average RGB value in a frame.
+-> Compares and gives the closest match (in our excel file) as the output. 
+
+
+
+2) pH DETECTION MODE
+
+-> In this mode we detect the color changes in a ph paper.
+-> Speak out the output color of pH paper when a button is pressed. 
+-> We use RGB ranges of mainly three types of pH paper colors red, blue and light green.
+-> When a button is pressed it creates 3 images by passing actual image through these ranges.
+-> Then we calculate the non zero pixels 
+-> If red count is greater, then we return red and if blue count is greater then we return blue and if pH color is not found then we return no ph paper found else we return no color found in ph paper.
+
+
